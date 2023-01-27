@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/megaStore/static/css/main.40a3d197.css",
-    "main.js": "/megaStore/static/js/main.ad092da8.js",
+    "main.js": "/megaStore/static/js/main.0628db82.js",
     "static/media/bicycles.jpg": "/megaStore/static/media/bicycles.95892e0a038323980b51.jpg",
     "static/media/cars.jpg": "/megaStore/static/media/cars.59113bc3b0a2e85201b2.jpg",
     "static/media/tv.jpg": "/megaStore/static/media/tv.a0e27ecfe52c1b6f1fde.jpg",
@@ -15,10 +15,10 @@
     "static/media/slick.woff": "/megaStore/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/megaStore/index.html",
     "main.40a3d197.css.map": "/megaStore/static/css/main.40a3d197.css.map",
-    "main.ad092da8.js.map": "/megaStore/static/js/main.ad092da8.js.map"
+    "main.0628db82.js.map": "/megaStore/static/js/main.0628db82.js.map"
   },
   "entrypoints": [
     "static/css/main.40a3d197.css",
-    "static/js/main.ad092da8.js"
+    "static/js/main.0628db82.js"
   ]
 }
