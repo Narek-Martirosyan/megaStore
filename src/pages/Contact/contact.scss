@@ -1,0 +1,62 @@
+@import "../../global.scss";
+
+.contact {
+    width: 100%;
+    background-color: $grey;
+    padding: 50px 0;
+
+    .about {
+        width: 60%;
+        border-radius: 10px;
+        background-color: $white;
+        margin: 0 auto;
+        padding: 20px;
+        box-shadow: 0 0 5px $active_gray;
+
+        .message-us {
+            width: 70%;
+            margin: 0 auto;
+            background-color: $grey;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 0 5px $active_gray;
+
+            form {
+                display: flex;
+                flex-direction: column;
+
+                div {
+                    display: flex;
+                    justify-content: space-between;
+
+                    &:first-child {
+                        margin-bottom: 15px;
+                    }
+
+                    label {
+                        color: $dark;
+                    }
+
+                    input {
+                        outline: none;
+                        border: 1px solid $active_gray;
+                        border-radius: 5px;
+                        width: 55%;
+                        padding-left: 15px;
+                        color: $dark;
+                        font-size: 14px;
+
+                        &.last-inp {
+                            padding-bottom: 100px;
+                        }
+                    }
+                }
+
+                button {
+                    width: fit-content;
+                    margin: 10px 0 0 auto;
+                }
+            }
+        }
+    }
+}

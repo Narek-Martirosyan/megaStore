@@ -1,0 +1,117 @@
+@import "../../../global.scss";
+
+.category-section {
+    padding: 50px 0;
+
+    .section-heading {
+        margin-bottom: 20px;
+        color: $dark;
+
+        h2 {
+            text-transform: capitalize;
+        }
+
+        span {
+            font-size: 15px;
+            font-style: italic;
+            text-transform: capitalize;
+
+        }
+    }
+
+    .carousel-section {
+        .one-product {
+            .main-product {
+                background-color: $dark;
+                position: relative;
+                
+                img {
+                    width: 300px;
+                    height: 300px;
+                    object-fit: cover;
+                    margin: 0 auto;
+                }
+
+                .hover-content {
+                    position: absolute;
+                    bottom: -15px;
+                    left: 35px;
+                    opacity: 0;
+                    transition: .4s;
+
+
+                    ul {
+                        display: flex;
+                        justify-content: center;
+
+                        li {
+                            list-style: none;
+
+                            a,
+                            span {
+                                text-decoration: none;
+                                color: #000;
+                                display: inline-flex;
+                                justify-content: center;
+                                align-items: center;
+                                cursor: pointer;
+                                width: 50px;
+                                height: 50px;
+                                background-color: white;
+                                margin: 0 10px;
+                            }
+                        }
+                    }
+                }
+
+                &:hover .hover-content {
+                    opacity: 1;
+                    transform: translateY(-35px);
+                }
+            }
+
+            .describe-product {
+                span {
+                    font-size: 18px;
+
+                    &::before {
+                        content: "֏ ";
+                        font-weight: 600;
+                        font-size: 20px;
+                    }
+                }
+            }
+        }
+
+        @media screen and (max-width: 600px) {
+            width: 80%;
+            margin: 0 auto;
+        }
+    }
+}
+
+
+
+
+
+
+// slick styles
+.slick-list {
+    margin: 0 0px 0 20px;
+}
+
+.slick-slide>div {
+    padding: 0 10px;
+}
+
+.slick-slider {
+    button.slick-arrow {
+
+        &::before {
+            color: $dark;
+            z-index: 99999;
+            font-size: 40px;
+            text-shadow: 0 0 1px $blue;
+        }
+    }
+}

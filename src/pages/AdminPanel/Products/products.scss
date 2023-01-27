@@ -1,0 +1,40 @@
+@import "../../../global.scss";
+
+.dashproducts {
+    .add-statement {
+        margin-left: auto;
+        margin-right: 20px;
+        display: block;
+        width: fit-content;
+        margin-bottom: 30px;
+    }
+
+    table {
+        min-width: 1000px;
+        margin-right: 20px;
+        margin-bottom: 50px;
+        color: $dark;
+
+        .actions {
+            text-align: center;
+            line-height: 70px;
+
+            a {
+                text-decoration: none;
+                color: $dark;
+
+                &:first-child {
+                    margin-right: 20px;
+                }
+
+                svg {
+                    font-size: 20px;
+                }
+
+                &:hover {
+                    color: $blue;
+                }
+            }
+        }
+    }
+}

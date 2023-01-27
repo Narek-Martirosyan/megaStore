@@ -1,0 +1,106 @@
+@import "../../global.scss";
+
+aside {
+    width: 250px;
+    height: 100vh;
+    transition: .3s;
+    background-color: $dark;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    color: white;
+    overflow: hidden;
+
+    .arrow-box {
+        position: absolute;
+        right: 30px;
+        top: 10px;
+        cursor: pointer;
+        transition: .3s;
+
+        .angle {
+            font-size: 30px;
+            transition: .3s;
+
+            &.right {
+                transform: rotate(180deg);
+            }
+        }
+
+        &:hover {
+            color: blue;
+        }
+    }
+
+    .logo-box {
+        margin-top: 30px;
+
+        img {
+            width: 250px;
+            transition: .3s;
+
+            &.show {
+                opacity: 1;
+            }
+
+            &.hide {
+                opacity: 0;
+            }
+        }
+    }
+
+    .content-box {
+        padding: 0;
+
+        li {
+            list-style: none;
+
+            a {
+                text-decoration: none;
+                color: white;
+                font-weight: 700;
+                display: inline-flex;
+                flex-wrap: nowrap;
+                padding: 15px 20px;
+                width: 100%;
+                margin: 2px 0;
+                transition: .3s;
+
+                &:hover {
+                    background-color: $blue_soft;
+                }
+
+                .icons {
+                    font-size: 25px;
+                    margin-right: 10px;
+                    min-width: fit-content;
+                }
+
+                span {
+                    transition: .3s;
+
+                    &.show {
+                        opacity: 1;
+                    }
+
+                    &.hide {
+                        opacity: 0;
+                    }
+                }
+            }
+
+            .active {
+                background-color: $blue;
+
+                &:hover {
+                    background-color: $blue;
+                }
+            }
+        }
+    }
+
+    &.maximize {
+        width: 70px;
+    }
+}

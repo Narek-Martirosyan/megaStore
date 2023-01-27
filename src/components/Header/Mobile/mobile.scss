@@ -1,0 +1,124 @@
+@import "../../../global.scss";
+
+.mobile-burger {
+    position: relative;
+
+    .bg-burger {
+        border-radius: 50%;
+        width: fit-content;
+        padding: 10px;
+        transition: .2s;
+
+        .burger {
+            font-size: 25px;
+        }
+
+        &:hover {
+            background-color: $grey;
+        }
+
+        &:active {
+            background-color: $active_gray;
+        }
+    }
+
+    .mobile-navigation-bar {
+        position: fixed;
+        z-index: 999;
+        top: 60px;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        margin: auto;
+        width: 80%;
+        height: fit-content;
+        visibility: hidden;
+        opacity: 0;
+        background-color: $grey;
+        transition: .4s;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        box-shadow: 0 0 5px $active_gray;
+
+        li {
+            list-style: none;
+            position: relative;
+            margin: 10px 0;
+            border-bottom: 1px solid #e9e6e6;
+
+            a,
+            span {
+                text-decoration: none;
+                display: inline-block;
+                color: #000;
+                font-weight: 600;
+                letter-spacing: 2px;
+                cursor: pointer;
+
+                &:hover {
+                    color: $blue;
+                }
+            }
+
+            .mobile-dropdown-nav {
+                padding: 0;
+                transition: .3s;
+                height: 0;
+                overflow: hidden;
+                opacity: 0;
+                min-width: 160px;
+                background-color: $grey;
+                box-shadow: 0 0 5px $grey;
+
+                li {
+                    a {
+                        min-width: 160px;
+                        border-top: 1px solid #e9e6e6;
+                        border-bottom: 1px solid #e9e6e6;
+                        transition: .1s;
+                        margin-left: 15px;
+                        font-size: 14px;
+
+                        &:hover {
+                            transform: scale(1.02);
+                        }
+
+                        &:first-child,
+                        &:last-child {
+                            border-top: unset;
+                        }
+                    }
+                }
+
+                &.active {
+                    height: 180px;
+                    opacity: 1;
+                }
+            }
+
+            .mobile-angle-down {
+                transition: .3s;
+
+                &.active {
+                    transform: rotate(180deg);
+                }
+            }
+
+            &:last-child {
+                margin-bottom: 30px;
+            }
+        }
+
+        &.active {
+            visibility: visible;
+            opacity: 1;
+            transform: translateY(-75px);
+        }
+    }
+
+    @media screen and (min-width: 769px) {
+        display: none;
+    }
+}

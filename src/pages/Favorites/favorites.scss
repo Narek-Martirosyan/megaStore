@@ -1,0 +1,187 @@
+@import "../../global.scss";
+
+.favorites {
+    background-color: $grey;
+    padding: 30px 0;
+
+    .categories {
+        background-color: $white;
+        padding: 20px;
+        border-radius: 10px;
+
+        .title {
+            margin-bottom: 20px;
+
+            span {
+                display: none;
+
+                @media screen and (max-width: 991px) {
+                    display: inline;
+                }
+
+                .show-more-angle-down {
+                    transition: .3s;
+
+                    &.active {
+                        transform: rotate(180deg);
+                    }
+                }
+            }
+        }
+
+        .main-categories-parent {
+            .main-categories {
+                cursor: pointer;
+                width: fit-content;
+
+                &:hover {
+                    color: $blue;
+                }
+            }
+
+            .subcategories {
+                font-size: 14px;
+                padding-left: 15px;
+                cursor: pointer;
+                width: fit-content;
+
+                &:hover {
+                    color: $blue;
+                }
+            }
+
+            @media screen and (max-width: 991px) {
+                height: 0px;
+                transition: .3s;
+                overflow: hidden;
+            }
+
+            &.active {
+                height: 435px;
+            }
+        }
+    }
+
+    .favorites-block {
+        background-color: $white;
+        padding: 20px;
+        border-radius: 10px;
+
+        .fav-announce {
+            margin-bottom: 20px;
+        }
+
+        .one-favorite-block {
+            margin-bottom: 20px;
+            border-bottom: 2px solid $grey;
+            transition: .3s;
+            cursor: pointer;
+
+            .product-part {
+                display: flex;
+
+                .img-block {
+                    width: 250px;
+                    height: 150px;
+
+                    img {
+                        width: 250px;
+                        height: 150px;
+                        object-fit: cover;
+                        border-radius: 10px;
+
+                        @media screen and (max-width: 767px) {
+                            width: 350px;
+                            height: 200px;
+                        }
+
+                        @media screen and (max-width: 425px) {
+                           width: 250px;
+                           height: 150px;
+                        }
+                    }
+
+                    @media screen and (max-width: 767px) {
+                        width: 350px;
+                        height: 200px;
+                        margin-bottom: 20px;
+                    }
+
+                    @media screen and (max-width: 425px) {
+                        width: 250px;
+                        height: 150px;
+                     }
+                }
+
+                .tdp {
+                    width: 55%;
+                    margin-left: 25px;
+
+                    .title {}
+
+                    .description {
+                        font-weight: 400;
+                        font-size: 15px;
+                    }
+
+                    .price {}
+
+                    @media screen and (max-width: 991px) {
+                        width: 50%;
+                    }
+
+                    @media screen and (max-width: 767px) {
+                        width: 65%;
+                        margin-left: 0;
+                    }
+
+                    @media screen and (max-width: 425px) {
+                        width: 100%;
+                     }
+                }
+
+                .star-cart {
+                    margin-left: auto;
+                    display: flex;
+                    flex-direction: column;
+
+                    .star {
+                        font-size: 30px;
+                        margin-bottom: 10px;
+                    }
+
+                    .cart {
+                        font-size: 30px;
+                    }
+
+                    @media screen and (max-width: 767px) {
+                        flex-direction: row;
+                        margin: 0;
+                    }
+                }
+
+                @media screen and (max-width: 767px) {
+                    flex-direction: column;
+                }
+            }
+
+            &:hover .description {
+                color: $blue;
+            }
+
+            &:hover .title {
+                color: $blue;
+            }
+
+            &:hover .price {
+                color: $blue;
+            }
+
+            @media screen and (max-width: 767px) {
+                margin-bottom: 30px;
+            }
+        }
+    }
+
+
+}

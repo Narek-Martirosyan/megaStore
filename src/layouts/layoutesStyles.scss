@@ -1,0 +1,12 @@
+@import "../global.scss";
+
+.admin-outlet {
+    margin-left: 280px;
+    margin-top: 80px;
+    transition: .3s;
+
+    &.max {
+        margin-left: 100px;
+    }
+}
+

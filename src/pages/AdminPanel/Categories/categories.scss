@@ -1,0 +1,40 @@
+@import "../../../global.scss";
+
+.dashcategories {
+    .add-category {
+        margin-left: auto;
+        display: block;
+        width: fit-content;
+        margin-bottom: 30px;
+        margin-right: 20px;
+    }
+
+    table {
+        min-width: 1000px;
+        margin-right: 20px;
+        color: $dark;
+        margin-bottom: 50px;
+
+        .actions {
+            text-align: center;
+            line-height: 70px;
+
+            a {
+                text-decoration: none;
+                color: $dark;
+
+                &:first-child {
+                    margin-right: 20px;
+                }
+
+                svg {
+                    font-size: 20px;
+                }
+
+                &:hover {
+                    color: $blue;
+                }
+            }
+        }
+    }
+}
