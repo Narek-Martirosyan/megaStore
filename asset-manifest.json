@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/megaStore/static/css/main.40a3d197.css",
+    "main.js": "/megaStore/static/js/main.ad092da8.js",
+    "static/media/bicycles.jpg": "/megaStore/static/media/bicycles.95892e0a038323980b51.jpg",
+    "static/media/cars.jpg": "/megaStore/static/media/cars.59113bc3b0a2e85201b2.jpg",
+    "static/media/tv.jpg": "/megaStore/static/media/tv.a0e27ecfe52c1b6f1fde.jpg",
+    "static/media/noutbookes.jpg": "/megaStore/static/media/noutbookes.17eace56b606cb30ccb6.jpg",
+    "static/media/logo.png": "/megaStore/static/media/logo.65fb7e4ae4a512bac9c5.png",
+    "static/media/homes.jpg": "/megaStore/static/media/homes.197164bc247ff26861fa.jpg",
+    "static/media/goTop.png": "/megaStore/static/media/goTop.a6faf333992cd03ff5b8.png",
+    "static/media/slick.svg": "/megaStore/static/media/slick.2630a3e3eab21c607e21.svg",
+    "static/media/slick.eot": "/megaStore/static/media/slick.a4e97f5a2a64f0ab1323.eot",
+    "static/media/slick.ttf": "/megaStore/static/media/slick.c94f7671dcc99dce43e2.ttf",
+    "static/media/slick.woff": "/megaStore/static/media/slick.295183786cd8a1389865.woff",
+    "index.html": "/megaStore/index.html",
+    "main.40a3d197.css.map": "/megaStore/static/css/main.40a3d197.css.map",
+    "main.ad092da8.js.map": "/megaStore/static/js/main.ad092da8.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.40a3d197.css",
+    "static/js/main.ad092da8.js"
+  ]
+}
